@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!-- Internet and World Wide Web How to Program 5ed Deitel -->
+<!-- Exercise 3.6 -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Exercise 3.6</title>
+   </head>
+
+   <!--<body>
+      1 <meter
+         min = "1"
+         max = "10"
+         value = "7">
+      </meter> 10
+
+      <p>
+         <details>
+            <summary>Survey Results</summary>
+            <p>
+               In a survey conducted by students to rate the food in the
+               cafeteria on a scale of 1 to 10. The above results shows that the
+               average rating was 7 out of 10.
+            </p>
+         </details>
+      </p>
+
+      <p><label>First Name
+            <input type = "text" id = "firstName" placeholder = "First Name"
+               autofocus />
+         </label>
+      </p>
+
+      <form method = "post" autocomplete = "on">
+         <p><label for = "txtList">State
+            <input type = "text" id = "txtList" placeholder = "Select state"
+               list = "states" />
+            <datalist id = "states">
+               <option value = "Kano">
+               <option value = "Kaduna">
+               <option value = "Jigawa">
+               <option value = "Katsina">
+               <option value = "Jos">
+            </datalist>
+            </label>
+         </p>
+
+         <input type = "submit" value = "Submit">
+      </form>
+
+      1<input type = "range" id = "rangeofvalues"
+         min = "1"
+         max = "100"
+         step = "1"
+         value = "50" />100
+
+      <p>Students were asked to rate the food in the cafeteria
+         <mark>on a scale of 1 to 100. The average result was 7.</mark></p>
+   </body>-->
+   <body>
+      <h1>Registration Form</h1>
+
+      <form method = "post" action = "aminukano585@gmail.com" autocomplete = "on">
+         <input type = "hidden" name = "recipient"
+            value = "aminukano585@gmail.com">
+         <input type = "hidden" name = "subject"
+            value = "Registration Form">
+         <input type = "hidden" name = "redirect"
+            value = "exe03-06.html">
+
+         <!-- The following inputs inserts text field -->
+         <p><label>First Name:
+            <input type = "text" id = "firstName"
+               placeholder = "Enter your first name here">
+            </label>
+         </p>
+
+         <p><label>Last Name:
+            <input type = "text" id = "lastName"
+               placeholder = "Enter your last name here">
+            </label>
+         </p>
+
+         <p><label>E-Mail:
+            <input type = "email" id = "email"
+               placeholder = "Enter your email here">
+            </label>
+         </p>
+
+         <details>
+            <summary>Optional Survey Question</summary>
+            <p>
+               <strong>Which year are you currently in college?</strong><br>
+               <label>Freshman
+                  <input name = "year" type = "radio" value = "freshman"
+                     checked></label>
+               <label>Sophomore
+                  <input name = "year" type = "radio" value = "sophomore"></label>
+               <label>Penultimate
+                  <input name = "year" type = "radio" value = "penultimate"></label>
+               <label>Final
+                  <input name = "year" type = "radio" value = "final"></label>
+            </p>
+         </details>
+
+         <p>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+         </p>
+      </form>
+   </body>
+</html>

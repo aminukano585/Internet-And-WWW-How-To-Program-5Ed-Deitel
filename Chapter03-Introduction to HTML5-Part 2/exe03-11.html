@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<!-- Internet and World Wide Web How to Program 5ed Deitel -->
+<!-- Exercise 3.11 -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Exercise 3.11</title>
+   </head>
+
+   <body>
+      <header>
+         <h1>3.2.1 input Type color</h1>
+      </header>
+
+      <section id = "1">
+         <nav>
+            <h2>Quick Links</h2>
+            <ul>
+               <li><a href = "#1">input Type color</a></li>
+               <li><a href = "#2">autofocus Attribute</a></li>
+               <li><a href = "#3">Validation</a></li>
+            </ul>
+         </nav>
+
+         <p>
+            The <strong>color</strong> input type (Fig. 3.1; lines 20&ndash;21)
+            enables the user to enter a color. Opera displays a
+            color picker control that shows the default color
+            (black) with a down arrow that, when clicked, shows a
+            drop-down with 20 basic colors (Fig. 3.2). The user can
+            select a color or click the Other... button to select
+            from additional basic colors or create a custom color.
+            At the time of this writing, most browsers render the
+            color input type as a text field in which the user can
+            enter a hexidecimal code.
+         </p>
+         <figure>
+            <hr>
+            <img src = "OperaColorInput.png" alt = "color picker control"><hr>
+            <figcaption>
+               <strong>Fig. 3.2</strong>
+                  Inputting a color in Opera with a color picker control.
+            </figcaption>
+         </figure>
+      </section>
+
+      <section id = "2">
+         <em><strong>autofocus</strong> Attribute</em>
+         <p>
+            The <strong>autofocus</strong> attribute (Fig. 3.1; line 20)&mdash;an
+            optional attribute that can be used in only one input
+            element on a form&mdash;automatically gives the focus
+            to the input element, allowing the user to begin typing
+            in that element immediately. Figure 3.3 shows autofocus on
+            the color element&mdash;the first input element in our
+            form&mdash;as rendered in Chrome. You do not need to
+            include autofocus in your forms.
+         </p>
+         <figure>
+            <hr>
+            <img src = "autofocus.png" alt = "autofocus demo"><hr>
+            <figcaption>
+               <strong>Fig. 3.3</strong>
+                  Autofocus in the color input element using Chrome.
+            </figcaption>
+         </figure>
+      </section>
+
+      <section id = "3">
+         <em>Validation</em>
+         <p>
+            Traditionally it's been difficult to validate user
+            input, such as ensuring that an e-mail address, URL,
+            date or time is entered in the proper format. The new
+            HTML 5 input types are self validating on the client
+            side, eliminating the need to add complicated
+            JavaScript code to your web pages to validate user
+            input, reducing the amount of invalid data submitted
+            and consequently reducing Internet traffic between the
+            server and the client to correct invalid input.
+            When a user enters data into a form then submits the
+            form (in this example, by clicking the Submit button),
+            the browser immediately checks the self-validating
+            elements to ensure that the data is correct. For
+            example, if a user enters an incorrect hexadecimal
+            color value when using a browser that renders the color
+            elements as a text field (e.g., Chrome), a callout
+            pointing to the element will appear, indicating that an
+            invalid value was entered (Fig. 3.4). Figure 3.5 lists
+            each of the new HTML5 input types and provides examples
+            of the proper formats required for each type of data to be valid.
+         </p>
+         <figure>
+            <hr>
+            <img src = "selfvalidationChrome.png" alt = "input validation"><hr>
+            <figcaption>
+               <strong>Fig. 3.4</strong>
+                  Validating a color input in Chrome.
+            </figcaption>
+         </figure>
+         <details>
+            <summary><strong>Fig. 3.5 Self-validating input types.</strong></summary>
+            <table border = "1">
+               <thead>
+                  <th>input type</th>
+                  <th>Format</th>
+               </thead>
+               <tr>
+                  <td>color</td>
+                  <td>Hexadecimal code</td>
+               </tr>
+               <tr>
+                  <td>date</td>
+                  <td>yyyy-mm-dd</td>
+               </tr>
+               <tr>
+                  <td>datetime</td>
+                  <td>yyyy-mm-dd</td>
+               </tr>
+               <tr>
+                  <td>datetime-local</td>
+                  <td>yyyy-mm-ddThh:mm</td>
+               </tr>
+               <tr>
+                  <td>month</td>
+                  <td>yyyy-mm</td>
+               </tr>
+               <tr>
+                  <td>number</td>
+                  <td>Any numerical value</td>
+               </tr>
+               <tr>
+                  <td>email</td>
+                  <td>name@domain.com</td>
+               </tr>
+               <tr>
+                  <td>url</td>
+                  <td>http://www.domainname.com</td>
+               </tr>
+               <tr>
+                  <td>time</td>
+                  <td>hh:mm</td>
+               </tr>
+               <tr>
+                  <td>week</td>
+                  <td>yyyy-Wnn</td>
+               </tr>
+            </table>
+         </details>
+      </section>
+
+      <footer>
+         <h6>&copy;<a href = "http://www.freecodecamp.com/aminukano">Aminu Kano</a></h6>
+
+         <address>Contact me at <a href = "mailto:aminukano585@gmail.com">
+            aminukano585@gmail.com</a>
+         </address>
+      </footer>
+   </body>
+</html>
