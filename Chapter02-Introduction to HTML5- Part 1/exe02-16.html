@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<!-- Internet and World Wide Web How to Program 5ed Deitel -->
+<!-- Exercise 2.16 -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Exercise 2.16</title>
+   </head>
+
+   <body>
+      <h1>BUK Feedback Form</h1>
+      <p>Dear prospective students, please fill out this form to
+         help us make your campus visit better.</p>
+
+      <form action = "http://www.google.com" method = "post">
+         <p>
+            <input type = "hidden" name = "recipient"
+               value = "aminukano585@gmail.com">
+            <input type = "hidden" name = "subject"
+               value = "BUK Feedback Form">
+            <input type = "hidden" name = "redirect"
+               value = "main.html">
+         </p>
+
+         <p><label>Name:
+               <input name = "name" type = "text" size = "25">
+            </label></p>
+         <p><label>Address:
+               <input name = "address" type = "text" size = "50">
+            </label></p>
+         <p><label>E-mail:
+               <input name = "email" type = "text" size = "25">
+            </label></p>
+
+         <p>
+            <strong>What do you like most about the campus?</strong><br>
+
+            <label>students
+               <input name = "likes" type = "checkbox" value = "students">
+            </label>
+            <label>location
+               <input name = "likes" type = "checkbox" value = "location">
+            </label>
+            <label>campus
+               <input name = "likes" type = "checkbox" value = "campus">
+            </label>
+            <label>atmosphere
+               <input name = "likes" type = "checkbox" value = "atmosphere">
+            </label>
+            <label>dorm rooms
+               <input name = "likes" type = "checkbox" value = "rooms">
+            </label>
+            <label>sports
+               <input name = "likes" type = "checkbox" value = "sports">
+            </label>
+         </p>
+
+         <p>
+            <strong>How did you became interested in this university?</strong><br>
+
+            <label>friends
+               <input name = "interested" type = "radio" value = "friends" checked>
+            </label>
+            <label>television
+               <input name = "interested" type = "radio" value = "television">
+            </label>
+            <label>internet
+               <input name = "interested" type = "radio" value = "internet">
+            </label>
+            <label>others
+               <input name = "interested" type = "radio" value = "others">
+            </label>
+         </p>
+
+         <p><label>Comments:<br>
+               <textarea name = "comments" rows = "4" cols = "36"
+                  placeholder = "Enter comments here."></textarea>
+            </label></p>
+
+         <p>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Clear">
+         </p>
+      </form>
+   </body>
+</html>
