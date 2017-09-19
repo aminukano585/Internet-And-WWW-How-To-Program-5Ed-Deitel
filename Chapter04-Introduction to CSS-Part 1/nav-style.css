@@ -1,0 +1,37 @@
+/* Internet and World Wide Web How to Program 5ed Deitel */
+/* Exercise 4.9 */
+body              {
+   font-family: arial, sans-serif;
+}
+
+div               {
+   border: 3px solid navy;
+   border-radius: 20%;
+   background-color: green;
+   width: 10em;
+   text-align: center;
+   color: white;
+}
+
+div:hover         {
+   border: 5px solid blue;
+   border-radius: 30%;
+   background-color: yellow;
+   width: 10em;
+   text-align: center;
+   color: green;
+}
+
+div ul            {
+   display: none;
+   list-style: none;
+}
+
+div:hover ul      {
+   display: block;
+}
+
+div ul li:hover   {
+   background-color: red;
+   border-bottom-right-radius: 50%;
+}
